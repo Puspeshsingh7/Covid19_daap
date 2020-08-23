@@ -34,7 +34,7 @@ To publish on IPFS/IPNS
  Paste the account on  https://faucet.ropsten.be  and click on send ether
 3. Run `truffle migrate --reset --network ropsten`
 4. Run `npm install`
-5. Run Ipfs
+5. Run Ipfs  // IPFS should be installed in system
 6. on command prompt ./ipfs add -r public
 
 To publish on ipfs
