@@ -1,4 +1,4 @@
-Note :- Project Id and seed phrase is secrets file is removed for privacy
+Note :-  secrets file is removed for privacy
 
 FOR PUBLIC NETWORK(Ropsten test network)
  
