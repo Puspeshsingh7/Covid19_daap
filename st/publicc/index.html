@@ -1,0 +1,112 @@
+<html>
+<head>
+  <title>Coronavirus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="bundle.js"></script>
+<meta charset="utf-8" />
+
+<style>
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url(./bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.in {
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    padding: 30px;
+    width: 800px;
+    margin: 50px auto;
+}
+
+.ipc {
+    border-radius: 0;
+    outline: none;
+    border-color: #fff;
+}
+
+.bb {
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+
+a {
+    color: #fff;
+}
+
+.shd {
+    text-shadow: #000 1px 1px 10px;
+}
+
+.hd {
+    text-shadow: #000 1px 1px 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+}
+</style>
+
+</head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">COVID-19 INDIA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://covid-database.freecluster.eu/user/index.php">Request for Add Or Update <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+    <div class="in">
+      <h1>How to use?</h1>
+      <p>1. Check whether the state/city/country name is already stored in blockchain or not. If available, check whether the covid-19 information of that place is updated or not.</p>
+      <p>2. If place name is not present in the blockchain, you can procide the covid-19 details of that page in enter new state/city/country. </p>
+      <p>3. If place name is already available in database and the covid-19 details is not up to date then you can provide us the updated details in update state/city/country.</p>
+      <p>4. Your information will be checked and if found correct, then will be inserted in the blockchain.</p>
+      <p>NOTE-: The state/city/country name spelling should be according to <a href="https://en.wikipedia.org/wiki/Lists_of_cities" target="_blank">https://en.wikipedia.org/wiki/Lists_of_cities</a>.</p>
+
+    </div>
+    
+    <div class="in">
+      <form id="srhstatename">
+        <h2>Enter the name of state/city/country to be searched</h2>
+        <div class="form-group">
+          <label for="srhstate_name">State/city/country Name</label>
+          <input id="srhstate_name" type="text" class="form-control ipc"></input>
+        </div>
+        <button type="submit" class="btn bb">Submit</button>
+        <p id="srhstatenameresult"></p>
+      </form>
+    </div>
+          <hr>
+
+
+    </div>
+  </body>
+</html>
