@@ -1,6 +1,6 @@
 # Covid19_daap
 
-Note :-  secrets file is removed for privacy
+Note :- Project Id and seed phrase is secrets file is removed for privacy
 
 FOR PUBLIC NETWORK(Ropsten test network)
  
@@ -15,14 +15,20 @@ for 1st run
  Paste the account on  https://faucet.ropsten.be  and click on send ether
 3. Run `truffle migrate --reset --network ropsten`
 4. Run `npm install`
-5. run `npm start`
-6. on metamash selct Ropsten test network
-7. import account, enter the private key from step 3.
+5. Run `npm run build`
+6. run `npm start`                        // This will be hosted at http://localhost:8080/
+7. go inside st folder   `cd st`
+8. Run `npm install`
+9. Run `npm run build`
+10. Run `npm start`                        // This will be hosted at http://localhost:8081/
+11. on metamash selct Ropsten test network
+12. import account, enter the private key from step 3.
 
 Afterwards
 1. run `truffle compile`
 2. Run `truffle migrate --reset --network ropsten`
-3. run `npm start`
+3. Run `npm run build`
+4. run `npm start`
 
 
 Optional- Run `truffle test` on command line to test.
@@ -34,16 +40,33 @@ To publish on IPFS/IPNS
  Paste the account on  https://faucet.ropsten.be  and click on send ether
 3. Run `truffle migrate --reset --network ropsten`
 4. Run `npm install`
-5. Run Ipfs  // IPFS should be installed in system
-6. on command prompt ./ipfs add -r public
+5. Run `npm run build`
+6. Run Ipfs
+7. on command prompt ./ipfs add -r public
+8. Then go inside st folder `cd st`
+9. Run `./ipfs add -r publicc`
 
 To publish on ipfs
 
-7. Then on web browser, https://gateway.ipfs.io/ipfs/COPY PUBLIC HASH HERE
+10. Then on web browser, https://gateway.ipfs.io/ipfs/COPY PUBLIC HASH HERE
 // This will publish on ipfs
 
 Note: To publish on IPNS
 
-7. On command prompt ./ipfs name publish COPY PUBLIC HASH HERE
-8.7. Then on web browser, https://gateway.ipfs.io/ipns/COPY PEERID HASH HERE
+10. On command prompt ./ipfs name publish COPY PUBLIC HASH HERE
+11. Then on web browser, https://gateway.ipfs.io/ipns/COPY PEERID HASH HERE
 // This will publish on ipns
+
+To use Pinata as a pinning service for ipfs
+
+Go to https://pinata.cloud/
+Go to Pinata Upload tab.
+Upload both public folder and st/publicc to pinata.
+Them in Pin explorer tab, you will hash for both folders, click on the hash, It will open the website.
+
+
+
+
+TO INSTALL IPFS
+choco install ipfs-desktop
+https://github.com/ipfs-shipyard/ipfs-desktop
